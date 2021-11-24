@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShivMantra">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="ॐ नमः शिवाय" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Shiv Mahimna Stora" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:autoLink="web|phone"
+            android:text="@string/shiva" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"
+        android:text="Pause" />
+</RelativeLayout>
